@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+ <html lang='en'>
+     <style>
+               body{
+    font-family: 'Designil Font', 'Helvetica', sans-serif;
+}
+h1 { text-align:center;}
+h2 { text-align:center;}
+table, th, td {
+    border-color: black;
+    border-width: 2px;
+}
+th{
+    background-color: #ffff00;
+    color: black;
+}
+
+.buttonC {
+    padding:2px;
+    margin : 2px2px;
+    color: yellow;
+    background-color: SlateBlue;
+}
+.buttonD {
+    display: inline-block;
+    border-radius:4px;
+    background-color: #39ff14;
+    color: #FFFFFF;
+    text-align: center;
+    padding:2px;
+    width: 170px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin:2px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #172e41;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+} 
+     </style>
+   <head>
+     <meta charset='utf8'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>
+       Erk Homepage
+       </title>
+   <link rel="stylesheet" href="mystyle.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script> <script src="bgbutton.js">    </script>
+   </head>
+   <body>
+     <a href='https://www.facebook.com/paradorn.watcharasemakul/'title="Erk's FB" target=_blank><img style='width:180px;float:left' src='https://scontent.fbkk22-4.fna.fbcdn.net/v/t1.0-9/    68749350_2378706329012458_7462929151985451008_n.jpg?_nc_cat=109&_nc_sid=174925&_nc_eui2=AeF_D19rlu1Wi-zl1HFsA79NHP0qCqBISb4c_SoKoEhJvsnR2HPeV-VyMYFwcTJIjlBpl_vxw5a4h_C5Dzz2y6il&_nc_ohc=    i2jED0-F1TcAX_JTHH1&_nc_ht=scontent.fbkk22-4.fna&oh=8ac55a966ce8f0f97e8ac8b0447672c7&oe=5FAAFE50'></a>
+   <center>
+     <h1 id="myname">Paradorn Watcharasemakul</h1>
+     <h2 id="myname_th"> ภราดร วัชรเสมากุล </h2>
+   </center>
+     <center>
+     <form action='https://google.com/search' method='get' target =_blank>
+       <input name='q' type = 'text'>
+       <input value='Google search' type='submit'>
+     </form>
+     </center>
+
+     <br><br><br><br>
+     <center>
+     <table class="table table-bordered">
+       <caption style='font-size:150%;font-family:Arial;color:#07f827'>
+         About me
+       </caption>
+       <tr>
+         <th>ความคาดหวัง</th>
+         <td>เป็นนิสิตที่ดี</td>
+       </tr>
+       <tr>
+        <th>อาหารที่ชอบ</th>
+        <td>ส้มตำ สปาเก็ตตี้</td>
+       </tr>
+      <tr>
+         <th>สถานที่ท่องเที่ยวที่ชอบ</th>
+         <td>ชะอำ</td>
+       </tr>
+       <tr>
+         <th>ทักษะการเขียนโปรแกรม</th>
+       <td> c c++ python</td>
+       </tr>
+</tr>
+    </table>
+    </center>
+     <center>
+       <div>
+      <p>Here are the links to my friends' s
+     homepage, as well as the links to my
+       favorite pages.</p>
+       <button onclick= "document.location='https://www.facebook.com/parada.watcharasemakul/'">
+      Link to Ak's homepage</button>
+      <button class="buttonC" onclick= "document.location='https://mike.cpe.ku.ac.th/01204111'">
+       Link to 01204111</button>
+      <button class="buttonD" onclick="document. location='https://www.facebook.com/groups/514323486104989'">
+       <span>Link to 111FB4CPE34</span></button>
+      </div>
+    </center>
+     <center>
+     <div>
+      <button class="buttonC" onclick="document.location='http://earth.mikelab.net:8080/~std10/'">Link to Mark </button>
+     <button class="buttonC" onclick="document.location='http://earth.mikelab.net:8080/~std12/'">Link to Champ </button>
+      <button class="buttonC" onclick="document.location='http://earth.mikelab.net:8080/~std13/'">Link to Kop </button>
+ <button class="buttonC" onclick="document.location='http://earth.mikelab.net:8080/~std18/'">Link to Stamp </button>
+     </div>
+     </center>
+     <center>
+     Click me <label class="switch"> <input type="checkbox" id="bg"> <span class="slider round"></span> </label> </body>
+     </center>
+   </body>
+ <head>
+   <meta charset="utf8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>
+     Toto Homepage
+   </title>
+   <link rel="stylesheet" href="mystyle.css">
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script> <script src="bgbutton.js">    </script>
+
+</head>

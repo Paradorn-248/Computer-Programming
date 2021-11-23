@@ -1,0 +1,8 @@
+Mercury,พุธ
+Venus,ศุกร์
+Earth,โลก
+Mars,อังคาร
+Jupiter,พฤหัส
+Saturn,เสาร์
+Uranus,ยูเรนัส
+Neptune,เนปจูน
