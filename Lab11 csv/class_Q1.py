@@ -21,6 +21,7 @@ with open(filename) as country_file :
     data = csv.DictReader(country_file)
     country,population,EU,coastline= [],[],[],[]
     for row in data :
+        print(row)
         country.append(row['country'])
         population.append(float(row['population']))
         EU.append(row['EU'])
